@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="icon">
+      <img src="./LOGO.png" alt="icon">
+    </div>
+    <br>
+    <br>
+    <div class="user-content">
+      <h1 id="heading">Please provide address</h1>
+      <hr class="line_hr">
+
+      <div class="floating">
+        <input type="text" class="floating__input" id="FullName" placeholder="Full name">
+        <label for="inputId" class="floating__label" data-content="Full name">
+        </label>
+      </div>
+      <div id="Address 1" class="tabcontent">
+        <div class="floating">
+          <input type="text" class="floating__input" id="Address Line1" placeholder="House/ Flat/ Society">
+          <label for="inputId" class="floating__label" data-content="House/ Flat/ Society">
+          </label>
+        </div>
+        <div class="floating">
+          <input type="text" class="floating__input"  id="Address Line2" placeholder="Road/ Sector/ Block/ Area/ Phase">
+          <label for="inputId" class="floating__label" data-content="Road/ Sector/ Block/ Area/ Phase">
+        </div>
+        <div class="floating">
+          <input type="text" class="floating__input" id="City" placeholder="City">
+          <label for="inputId" class="floating__label" data-content="City">
+        </div>
+        <div class="floating">
+          <input type="text" class="floating__input" placeholder="Pincode" id="pincode">
+          <label for="inputId" class="floating__label" data-content="Pincode">
+        </div>
+      </div>
+      <div class="category" style="justify-content: flex-start;">
+        <input type="checkbox" name="Iagree" id="Iagree">&nbsp;&nbsp;&nbsp;&nbsp;
+        <div> I Agree to <span class="blueText"> Terms &
+          Conditions</span></div>
+      </div>
+      <div class="category-button">
+        <button onclick="call()">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
